@@ -1,4 +1,6 @@
-# versioninfo [![GoDoc](https://godoc.org/github.com/carlmjohnson/versioninfo?status.svg)](https://godoc.org/github.com/carlmjohnson/versioninfo) [![Go Report Card](https://goreportcard.com/badge/github.com/carlmjohnson/versioninfo)](https://goreportcard.com/report/github.com/carlmjohnson/versioninfo)
+# versioninfo [![GoDoc](https://godoc.org/github.com/grooverlabs/versioninfo?status.svg)](https://godoc.org/github.com/grooverlabs/versioninfo)
+
+Fork of github.com/carlmjohnson/versioninfo
 
 Importable package that parses `debug.ReadBuildInfo()` for inclusion in your Go application.
 
@@ -12,7 +14,7 @@ package main
 import (
     "fmt"
 
-    "github.com/carlmjohnson/versioninfo"
+    "github.com/grooverlabs/versioninfo"
 )
 
 func main() {
@@ -31,7 +33,7 @@ package main
 import (
     "fmt"
 
-    "github.com/carlmjohnson/versioninfo"
+    "github.com/grooverlabs/versioninfo"
 )
 
 func main() {
@@ -39,21 +41,3 @@ func main() {
 }
 ```
 
-Add the `-v` and `-version` flags:
-
-```go
-package main
-
-import (
-    "flag"
-    "fmt"
-
-    "github.com/carlmjohnson/versioninfo"
-)
-
-func main() {
-    versioninfo.AddFlag(nil)
-    flag.Parse()
-    fmt.Println("done")
-}
-```

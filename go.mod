@@ -1,3 +1,3 @@
-module github.com/carlmjohnson/versioninfo
+module github.com/grooverlabs/versioninfo
 
-go 1.16
+go 1.20
